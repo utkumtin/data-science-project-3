@@ -1,4 +1,4 @@
-# Data Science SQL Project 3
+# Data Science SQL Project 3venv/Sc 
 
 ### Proje Kurulumu
 Projeyi öncelikle forklayın ve clone edin.
@@ -27,33 +27,18 @@ sırasıyla kendi local veritabanınızda çalıştırınız.
 
 ### Görev 1
 
-* question_1_query fonksiyonun içerisinde `Yaşı 22’den büyük öğrencileri listele.` işlemini gerçekleştirecek sql querysini yazınız.
+* question_1_query fonksiyonun içerisinde `DATE_TRUNC ile ay bazlı kayıt sayılarını listele` işlemini gerçekleştirecek sql querysini yazınız.
+* question_2_query fonksiyonun içerisinde ` DATE_PART ile sadece kayıtların yıl bilgisini al` işlemini gerçekleştirecek sql querysini yazınız. query tüm kolonları dönmelidir.
+* question_3_query fonksiyonun içerisinde `Her öğrencinin yaşına göre kategori belirle. (CASE) Sorgu first_name, age ve öğrenci kategorisini dönmelidir. öğrenci yaşı 23 ten küçükse(dahil) kategori 'Genç', 23 ile 25(dahil) arasındaysa 'Orta', diğer şartlarda 'Deneyimli'sonucu dönmelidir.` işlemini gerçekleştirecek sql querysini yazınız.
+* question_4_query fonksiyonun içerisinde `En fazla öğrenciye sahip kursu bul (subquery ile)` işlemini gerçekleştirecek sql querysini yazınız.
+query sadece course_id bilgisini dönmelidir.
+* question_5_query fonksiyonun içerisinde `Yaşı ortalama yaştan büyük olan öğrencileri getir.` işlemini gerçekleştirecek sql querysini yazınız.
 query tüm kolonları dönmelidir.
-* question_2_query fonksiyonun içerisinde `Kurs kategorisi 'Veritabanı' olanları getir.` işlemini gerçekleştirecek sql querysini yazınız.
-query tüm kolonları dönmelidir.
-* question_3_query fonksiyonun içerisinde `İsmi ‘A’ harfi ile başlayan öğrencileri bul.` işlemini gerçekleştirecek sql querysini yazınız.
-query tüm kolonları dönmelidir.
-* question_4_query fonksiyonun içerisinde `Kurs ismi içinde ‘SQL’ geçenleri listele.` işlemini gerçekleştirecek sql querysini yazınız.
-query tüm kolonları dönmelidir.
-* question_5_query fonksiyonun içerisinde `Yaşı 22 ile 24 arasında olan öğrencileri getir.` işlemini gerçekleştirecek sql querysini yazınız.
-query tüm kolonları dönmelidir.
-* question_6_query fonksiyonun içerisinde `Kursa kayıtlı olan öğrencilerin isimlerini listele.` işlemini gerçekleştirecek sql querysini yazınız.
-query first_name ve last_name kolonlarını dönmelidir.
-* question_7_query fonksiyonun içerisinde `SQL kategorisindeki kurslara kayıtlı öğrenci sayısını bul.` işlemini gerçekleştirecek sql querysini yazınız.
-query course_name ve enrollment sayısını dönmelidir. enrollemnt sayısını student_count ismiyle dğitiriniz.
-* question_8_query fonksiyonun içerisinde `Her kursun adını ve bu kursu veren öğretmenin adını getir.` işlemini gerçekleştirecek sql querysini yazınız.
-query course_name ve instructor name kolonunu instructor_name şeklinde dönmelidir.
-* question_9_query fonksiyonun içerisinde `Kayıtlı olmayan öğrencileri listele.` işlemini gerçekleştirecek sql querysini yazınız.
-query tüm kolonları dönmelidir.
-* question_10_query fonksiyonun içerisinde `Kurslara göre ortalama öğrenci yaşı nedir?` işlemini gerçekleştirecek sql querysini yazınız.
-query course_name ve yaşların ortalamasını avg_age ismiyle dönmelidir.
-* question_11_query fonksiyonu içerisinde `Öğrenci başına toplam kaç kursa kayıtlı olduklarını listele.` işlemini gerçekleştirecek sql querysini yazınız.
-query first_name, last_name ve toplam kurs sayısını total_courses ismiyle dönmelidir.
-* question_12_query fonksiyonu içerisinde `Birden fazla kurs veren öğretmenleri listele.` işlemini gerçekleştirecek sql querysini yazınız.
-query instructor_name, ve toplam kurs sayısını total_courses ismiyle dönmelidir.
-* question_13_query fonksiyonu içerisinde `Kurslara göre kaç farklı öğrenci kayıtlı?` işlemini gerçekleştirecek sql querysini yazınız.
-query course_name ve farklı öğrenci sayısını unique_students ismiyle dönmelidir.
-* question_14_query  fonksiyonu içerisinde `Hem ‘SQL Temelleri’ hem de ‘İleri SQL’ kursuna kayıtlı öğrencileri bul.` işlemini gerçekleştirecek sql querysini yazınız.
-query öğrenciye ait first_name ve last_name kolonlarını dönmelidir.
-* question_15_query  fonksiyonu içerisinde `Kurs, öğretmen ve öğrenciyi birleştirerek kayıt tarihlerini listele.` işlemini gerçekleştirecek sql querysini yazınız.
-query öğrenciye ait first_name, last_name, course_name, instructor_name ve enrollment_date kolonlarını dönmelidir.
+* question_6_query fonksiyonun içerisinde `Her kursun en eski kayıt tarihini bul.` işlemini gerçekleştirecek sql querysini yazınız.
+query course_id ve en eski tarihi first_enrollment ismiyle dönmelidir.
+* question_7_query fonksiyonun içerisinde `Her kurs için öğrencilerin ortalama yaşlarını bulun.` işlemini gerçekleştirecek sql querysini yazınız.
+query course_name ve ortalama yaş(avg_age) değerlerini dönmelidir.
+* question_8_query fonksiyonun içerisinde `Subquery ile en genç öğrencinin adını getir.` işlemini gerçekleştirecek sql querysini yazınız.
+* question_9_query fonksiyonun içerisinde `Kayıt olduğu kurs sayısı ortalamadan fazla olan öğrencileri bul.` işlemini gerçekleştirecek sql querysini yazınız. Sorgu sadece student_id bilgisini dönmelidir.
+* question_10_query fonksiyonun içerisinde `Hiç kaydı olmayan kursları getir.` işlemini gerçekleştirecek sql querysini yazınız.
+query courses tablosunun tüm kolonlarını dönmelidir.

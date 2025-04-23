@@ -46,7 +46,7 @@ def test_question_7_query():
     result = question_7_query()
     assert isinstance(result, list)
     assert all(len(r) == 2 for r in result)
-    assert all(isinstance(r[1], float) for r in result)
+    assert all(isinstance(r[1], (float, Decimal)) for r in result)
 
 def test_question_8_query():
     result = question_8_query()
