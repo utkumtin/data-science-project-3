@@ -13,7 +13,7 @@ def connect_db():
 def question_1_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute('SELECT DATE_TRUNC(\'month\', enrollment_date) AS month, COUNT(*) FROM enrollments GROUP BY month ORDER BY month;')
+    cursor.execute('')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
@@ -24,7 +24,7 @@ def question_1_query():
 def question_2_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute('SELECT DISTINCT DATE_PART(\'year\', enrollment_date) AS year FROM enrollments;')
+    cursor.execute('')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
@@ -36,14 +36,7 @@ def question_2_query():
 def question_3_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute("""
-        SELECT first_name, age,
-            CASE
-                WHEN age < 23 THEN 'Genç'
-                WHEN age BETWEEN 23 AND 25 THEN 'Orta'
-                ELSE 'Deneyimli'
-        END AS age_group 
-        FROM students;""")
+    cursor.execute('')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
@@ -54,13 +47,7 @@ def question_3_query():
 def question_4_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute("""
-        SELECT course_id 
-        FROM enrollments 
-        GROUP BY course_id 
-        ORDER BY COUNT(*) DESC 
-        LIMIT 1;
-    """)
+    cursor.execute('')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
@@ -71,9 +58,7 @@ def question_4_query():
 def question_5_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute("""
-       SELECT * FROM students WHERE age > (SELECT AVG(age) FROM students);
-    """)
+    cursor.execute('')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
@@ -84,11 +69,7 @@ def question_5_query():
 def question_6_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute("""
-      SELECT course_id, MIN(enrollment_date) AS first_enrollment 
-      FROM enrollments 
-      GROUP BY course_id;
-    """)
+    cursor.execute('')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
@@ -100,13 +81,7 @@ def question_6_query():
 def question_7_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute("""
-     SELECT c.course_name, AVG(s.age) AS avg_age
-     FROM courses c
-     JOIN enrollments e ON c.course_id = e.course_id
-     JOIN students s ON s.student_id = e.student_id
-     GROUP BY c.course_name;
-    """)
+    cursor.execute('')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
@@ -117,9 +92,7 @@ def question_7_query():
 def question_8_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute("""
-     SELECT first_name FROM students WHERE age = (SELECT MIN(age) FROM students);
-    """)
+    cursor.execute('')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
@@ -127,23 +100,11 @@ def question_8_query():
 
 
 # Kayıt olduğu kurs sayısı ortalamadan fazla olan öğrencileri bul.
-# Sorgu sadece stuudent_id bilgisini dönmelidir.
+# Sorgu sadece student_id bilgisini dönmelidir.
 def question_9_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute("""
-    SELECT student_id
-    FROM enrollments
-    GROUP BY student_id
-    HAVING COUNT(course_id) > (
-    SELECT AVG(course_count) 
-    FROM (
-        SELECT COUNT(course_id) AS course_count 
-        FROM enrollments 
-        GROUP BY student_id
-    ) AS sub
-    );
-    """)
+    cursor.execute('')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
@@ -154,9 +115,7 @@ def question_9_query():
 def question_10_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute("""
-    SELECT * FROM courses WHERE course_id NOT IN (SELECT DISTINCT course_id FROM enrollments);
-    """)
+    cursor.execute('')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
