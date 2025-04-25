@@ -1,4 +1,4 @@
-# Data Science SQL Project 3venv/Sc 
+# Data Science SQL Project 
 
 ### Proje Kurulumu
 Projeyi öncelikle forklayın ve clone edin.
@@ -10,7 +10,7 @@ Aşağıdaki komutları sıtrayla çalıştırınız.
 * python -m venv venv
 * venv\Scripts\activate
 * pip install -r requirements.txt => Install all dependencies
-* python tests/test_question.py => Python run all tests
+* python watch.py => Python run all tests
 
 ## Bonus
 * Eğer daha detaylı bir şekilde testlerin içerisine bakmak isterseniz
