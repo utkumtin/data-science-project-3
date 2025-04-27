@@ -1,4 +1,4 @@
-import psycopg2
+Timport psycopg2
 
 def connect_db():
     conn = psycopg2.connect(
@@ -13,7 +13,7 @@ def connect_db():
 def question_1_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute('')
+    cursor.execute('SELECT * FROM customers')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
