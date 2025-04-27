@@ -1,4 +1,7 @@
-Timport psycopg2
+import psycopg2
+
+## Bu değeri localinde çalışırken kendi passwordün yap. Ama kodu pushlarken 'postgres' olarak bırak.
+password = 'postgres'
 
 def connect_db():
     conn = psycopg2.connect(
@@ -6,7 +9,7 @@ def connect_db():
     port=5432,
     database="postgres",
     user="postgres",
-    password="postgres")
+    password=password)
     return conn
 
 # DATE_TRUNC ile ay bazlı kayıt sayılarını listele
