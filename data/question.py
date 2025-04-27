@@ -16,7 +16,7 @@ def connect_db():
 def question_1_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute('SELECT DATE_TRUNC(\'month\', enrollment_date) AS month, COUNT(*) FROM enrollments GROUP BY month ORDER BY month;')
+    cursor.execute('')
     data = cursor.fetchall()
     cursor.close()
     connection.close()
