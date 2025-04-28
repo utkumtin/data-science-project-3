@@ -28,9 +28,9 @@ sırasıyla kendi local veritabanınızda çalıştırınız.
 ### Görev 1
 
 * question_1_query fonksiyonun içerisinde `DATE_TRUNC ile ay bazlı kayıt sayılarını listele` işlemini gerçekleştirecek sql querysini yazınız.
-* question_2_query fonksiyonun içerisinde ` DATE_PART ile sadece kayıtların yıl bilgisini al` işlemini gerçekleştirecek sql querysini yazınız. query tüm kolonları dönmelidir.
-* question_3_query fonksiyonun içerisinde `Her öğrencinin yaşına göre kategori belirle. (CASE) Sorgu first_name, age ve öğrenci kategorisini dönmelidir. öğrenci yaşı 23 ten küçükse(dahil) kategori 'Genç', 23 ile 25(dahil) arasındaysa 'Orta', diğer şartlarda 'Deneyimli'sonucu dönmelidir.` işlemini gerçekleştirecek sql querysini yazınız.
-* question_4_query fonksiyonun içerisinde `En fazla öğrenciye sahip kursu bul (subquery ile)` işlemini gerçekleştirecek sql querysini yazınız.
+* question_2_query fonksiyonun içerisinde `DATE_PART ile sadece kayıtların yıl bilgisini al` işlemini gerçekleştirecek sql querysini yazınız. query tüm kolonları dönmelidir.
+* question_3_query fonksiyonun içerisinde `Tüm öğrencilerin yaşlarının toplamını dönen bir sql sorgusu yaz.` işlemini gerçekleştirecek sql querysini yazınız.
+* question_4_query fonksiyonun içerisinde `En fazla öğrenciye sahip kursu bul` işlemini gerçekleştirecek sql querysini yazınız.
 query sadece course_id bilgisini dönmelidir.
 * question_5_query fonksiyonun içerisinde `Yaşı ortalama yaştan büyük olan öğrencileri getir.` işlemini gerçekleştirecek sql querysini yazınız.
 query tüm kolonları dönmelidir.
