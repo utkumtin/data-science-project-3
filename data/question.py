@@ -34,8 +34,7 @@ def question_2_query():
     return data
 
 
-#  Her öğrencinin yaşına göre kategori belirle. (CASE) Sorgu first_name, age ve öğrenci kategorisini dönmelidir.
-#  öğrenci yaşı 23 ten küçükse(dahil) kategori 'Genç', 23 ile 25(dahil) arasındaysa 'Orta', diğer şartlarda 'Deneyimli'sonucu dönmelidir.
+# Tüm öğrencilerin yaşlarının toplamını dönen bir sql sorgusu yaz.
 def question_3_query():
     connection = connect_db()
     cursor = connection.cursor()
@@ -46,7 +45,7 @@ def question_3_query():
     return data
 
 
-#En fazla öğrenciye sahip kursu bul (subquery ile)
+# Tüm kurs sayısını bul
 def question_4_query():
     connection = connect_db()
     cursor = connection.cursor()
@@ -91,7 +90,7 @@ def question_7_query():
     return data
 
 
-# Subquery ile en genç öğrencinin adını getir
+# En genç öğrencinin yaşını getiren sorguyu yazınız.
 def question_8_query():
     connection = connect_db()
     cursor = connection.cursor()
@@ -101,24 +100,22 @@ def question_8_query():
     connection.close()
     return data
 
-
-# Kayıt olduğu kurs sayısı ortalamadan fazla olan öğrencileri bul.
-# Sorgu sadece student_id bilgisini dönmelidir.
+# Her derse kayıt olmuş öğrenci sayısını bulunuz.
 def question_9_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute('')
+    cursor.execute("""""")
     data = cursor.fetchall()
     cursor.close()
     connection.close()
     return data
 
 
-#Hiç kaydı olmayan kursları getir. Sorgu courses tablosunun tüm kolonlarını dönmelidir.
+#Tüm kayıt olunmuş derslerin sadece isimlerini getirinz.
 def question_10_query():
     connection = connect_db()
     cursor = connection.cursor()
-    cursor.execute('')
+    cursor.execute("""""")
     data = cursor.fetchall()
     cursor.close()
     connection.close()
