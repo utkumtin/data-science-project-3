@@ -1,9 +1,9 @@
-# Data Science SQL Project 
+# Data Science SQL Project - JOINS AND GROUP BY
 
 ### Proje Kurulumu
 Projeyi öncelikle forklayın ve clone edin.
 Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projelerimizi belli klasör kalıplarında saklamak işimizi kolaylaştırmak adına iyi bir alışkanlıktır.
-Örnek bir Lokasyon: Code2Work/DataScience/data-project-2.
+Örnek bir Lokasyon: Code2Work/DataScience/data-projects.
 
 ### Proje Kurulumu Komutlar
 Aşağıdaki komutları sıtrayla çalıştırınız.
