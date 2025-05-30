@@ -61,7 +61,7 @@ def test_question_8_query():
 def test_question_9_query():
     result = question_9_query()
     assert isinstance(result, list)
-    assert result[0][1] == 2
+    assert result[1][1] == 3
 
 
 def test_question_10_query():
