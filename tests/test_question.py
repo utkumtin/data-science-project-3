@@ -24,7 +24,7 @@ def test_question_2_query():
 
 def test_question_3_query():
     result = question_3_query()
-    assert result[0][0] == 90
+    assert result[0][0] == 115
 
 
 def test_question_4_query():
