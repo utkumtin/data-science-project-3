@@ -19,7 +19,7 @@ def test_question_1_query():
 def test_question_2_query():
     result = question_2_query()
     assert isinstance(result, list)
-    assert all(isinstance(r[0], float) for r in result)
+    assert all(isinstance(r[4], float) for r in result)
 
 
 def test_question_3_query():
